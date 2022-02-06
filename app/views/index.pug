@@ -1,0 +1,9 @@
+include header.pug
+body(class='container')
+	h1 Welcome to Nabeatsu of the World 
+	p Please type a number!
+	form(method='POST', action='/nabeatsu')
+		p
+			input(type='text', name='number')
+		p
+			input(type='submit', name='submit', value='Calculate')

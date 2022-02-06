@@ -1,0 +1,22 @@
+include header.pug
+body(class='container')
+	h1 Result
+
+	case nabeatsu
+		when 0
+			img(src='/images/0.jpeg', alt='0')
+			- break
+		when 1	
+			img(src='/images/1.jpeg', alt='1')
+			- break
+		when 2
+			img(src='/images/2.jpeg', alt='2')
+			- break
+		when 9
+			img(src='/images/9.jpeg', alt='9')
+			- break
+		default
+			img(src='/images/normal.jpeg',alt='Normal')
+
+	p
+		a(href='/') Back to index

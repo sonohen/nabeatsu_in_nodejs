@@ -1,0 +1,7 @@
+version: "0.1"
+services:
+  echo:
+    build: .
+    ports:
+      - 8500:3000
+
